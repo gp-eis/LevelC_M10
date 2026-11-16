@@ -1,0 +1,29 @@
+/* Native Month9 launcher/reading-cover geometry, isolated to this component.
+ * The parent frame must supply an unpadded host: this wrapper owns page padding. */
+.m10-native-launcher-host{box-sizing:border-box;width:100%;max-width:none;margin:0 auto;padding:0}
+.m10-native-launcher,.m10-native-launcher *{box-sizing:border-box}
+.m10-native-launcher{width:min(100%,1040px);margin:0 auto;padding:16px 24px 40px}
+.m10-native-launcher .lesson-launch-heading{text-align:center;margin:0 0 20px}
+.m10-native-launcher .lesson-launch-heading h1{font-size:clamp(1.8rem,4vw,3rem);line-height:1.2;margin:0 0 10px;color:#237acc;text-shadow:2px 2px white}
+.m10-native-launcher .lesson-launch-heading p{font-size:clamp(.95rem,2vw,1.15rem);color:#47677b;margin:0}
+.m10-native-launcher .lesson-launch-card{padding:24px;border:5px solid white;border-radius:30px;background:#fffdf3;box-shadow:0 8px 0 #bfdce5;text-align:center}
+.m10-native-launcher .reading-video-shell{position:relative;width:min(760px,100%);margin:0 auto;overflow:hidden;border:clamp(4px,.55vw,7px) solid white;border-radius:clamp(18px,2.5vw,28px);background:#101820;box-shadow:0 8px 0 #235b8557,0 16px 28px #1f486c33}
+.m10-native-launcher .lesson-video-pending{aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:linear-gradient(150deg,#d9f1ff,#effaff);color:#315c7b;padding:20px}
+.m10-native-launcher .lesson-video-pending>span{font-size:clamp(2rem,5vw,4rem)}
+.m10-native-launcher .lesson-video-pending h2,.m10-native-launcher .lesson-video-pending p{margin:0}
+.m10-native-launcher .lesson-video-pending h2{font-size:clamp(1.2rem,3vw,1.8rem)}
+.m10-native-launcher .reading-cover-note{margin:22px 0 16px;color:#516b87;text-align:center}
+.m10-native-launcher .lesson-launch-actions{display:flex;justify-content:center}
+.m10-native-launcher .lesson-launch-button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 24px;border:4px solid white;border-radius:999px;background:linear-gradient(#ffca53,#f39b17);box-shadow:0 6px 0 #bb730b;color:#553810;font-family:inherit;font-weight:800;font-size:1.15rem;line-height:1.3;text-decoration:none;cursor:pointer}
+.m10-native-launcher .lesson-launch-button:disabled{background:#e4e7e9;color:#66747c;box-shadow:0 5px 0 #b8c0c5;cursor:default}
+.m10-native-launcher .lesson-launch-button:focus-visible{outline:4px solid #266ed3;outline-offset:4px}
+@media(max-width:600px){
+ .m10-native-launcher{padding:12px 12px 30px}
+ .m10-native-launcher .lesson-launch-card{padding:14px 10px;border-radius:24px}
+ .m10-native-launcher .lesson-launch-heading{margin-bottom:16px}
+ .m10-native-launcher .lesson-launch-button{font-size:1rem;padding:10px 16px}
+ .m10-native-launcher .lesson-video-pending{padding:14px;gap:6px}
+ .m10-native-launcher .reading-video-shell{border-width:4px;border-radius:18px;box-shadow:0 6px 0 #235b854d,0 11px 20px #1f486c2b}
+}
+/* Actual Reading launch pages load reading-quiz.css after the launcher rules. */
+.m10-native-launcher .reading-quiz-open{appearance:none;display:flex;gap:.55rem;width:min(100%,360px);min-height:60px;margin:1.15rem auto .25rem;padding:14px 24px;border:4px solid white;border-radius:999px;background:linear-gradient(180deg,#ffcf42,#f6a817);color:#173d6b;font-weight:900;font-size:1.12rem;line-height:1.2;box-shadow:0 8px 0 #c97705,0 13px 24px #53360538;text-align:center}

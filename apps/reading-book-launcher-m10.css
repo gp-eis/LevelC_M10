@@ -1,0 +1,9 @@
+/* Familiar native Reading card; actual book art keeps its own page ratio. */
+.m10-book-launcher .m10-book-pages{display:flex;justify-content:center;gap:10px;margin:0 0 16px}
+.m10-book-launcher .m10-book-page{font-family:inherit;font-weight:800;font-size:1rem;line-height:1.2;min-height:44px;padding:10px 20px;border:3px solid white;border-radius:999px;background:#cceaff;color:#1e5d86;box-shadow:0 4px 0 #80b6d4;cursor:pointer}
+.m10-book-launcher .m10-book-page[aria-pressed=true]{background:#ffcd5b;color:#60400d;box-shadow:0 4px 0 #cb941f}
+.m10-book-launcher .m10-book-page:focus-visible{outline:4px solid #266ed3;outline-offset:3px}
+.m10-book-launcher .m10-book-picture{width:min(760px,100%);margin:0 auto;overflow:hidden;border:5px solid white;border-radius:22px;background:white;box-shadow:0 6px 0 #235b8540}
+.m10-book-launcher .m10-book-picture>img{display:block;width:100%;height:auto;object-fit:contain}
+.m10-book-launcher .reading-scene-open{width:min(100%,360px);min-height:60px}
+@media(max-width:600px){.m10-book-launcher .m10-book-pages{margin-bottom:12px}.m10-book-launcher .m10-book-picture{border-width:3px;border-radius:16px}.m10-book-launcher .m10-book-page{padding:9px 18px}}

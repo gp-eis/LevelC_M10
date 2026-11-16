@@ -1,0 +1,12 @@
+/* Geometry stays with the current Month 9 workbench. Only source containment
+   and theme variables are adapted for Month 10's supplied square book photos. */
+#m9-flashcards .fc-feature img{aspect-ratio:16/9;max-height:360px;object-fit:contain}
+#m9-flashcards .fc-feature{line-height:0}
+#m9-flashcards .fc-thumb img,#m9-flashcards .fc-mini img{object-fit:contain}
+#m9-flashcards .fc-blank--picture{height:140px;min-width:160px;max-width:220px;padding:8px}
+#m9-flashcards .fc-blank--picture img{height:100%;width:100%;object-fit:contain;border-radius:10px}
+#m9-flashcards .m10-preview-voice{margin:18px auto 4px;font-size:.85rem}
+#m9-flashcards .fc-workbench{min-width:0}
+#m9-flashcards .fc-status[data-sentence-count]{align-self:center}
+#m9-flashcards .pending-slot{min-height:310px}
+@media(max-width:560px){#m9-flashcards .fc-feature img{max-height:260px}#m9-flashcards .fc-blank--picture{height:110px;min-width:120px}}

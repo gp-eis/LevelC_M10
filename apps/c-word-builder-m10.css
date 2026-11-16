@@ -1,0 +1,33 @@
+/* Scoped native C phonics framing; no A/B or other game selectors. */
+.m10-c-word-builder{width:min(1020px,100%);margin:auto;color:#244f70}
+.m10-c-word-builder *{box-sizing:border-box}
+.m10-c-word-builder button{font:inherit;cursor:pointer;touch-action:manipulation}
+.m10-c-word-builder button:disabled{opacity:.45;cursor:default}
+.m10-c-word-builder button:focus-visible{outline:4px solid #ffd84a;outline-offset:4px}
+.m10-c-word-builder .cwb-header{text-align:center}
+.m10-c-word-builder .cwb-header h1{margin:8px 0;color:#1e6fd9;font-size:clamp(2rem,5vw,3.4rem);text-shadow:3px 3px #fff}
+.m10-c-word-builder .cwb-header p{color:#108b67;font-weight:800}
+.m10-c-word-builder .cwb-toolbar,.m10-c-word-builder .cwb-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;margin:18px 0}
+.m10-c-word-builder .cwb-score-chip{min-height:48px;padding:11px 17px;border:4px solid #fff;border-radius:999px;background:#fff3bd;color:#75521a;box-shadow:0 5px 0 #dcba4a;font-weight:900}
+.m10-c-word-builder .cwb-button{min-height:52px;padding:10px 20px;border:4px solid #fff;border-radius:999px;background:linear-gradient(#69c9f5,#238fd0);box-shadow:0 6px 0 #17669f;color:#fff;font-weight:900}
+.m10-c-word-builder .cwb-button.is-green{background:linear-gradient(#81d969,#43a84e);box-shadow:0 6px 0 #287836}
+.m10-c-word-builder .cwb-button.is-orange{background:linear-gradient(#ffd163,#ee9911);box-shadow:0 6px 0 #a65c08}
+.m10-c-word-builder .cwb-board{padding:clamp(18px,4vw,34px);border:8px solid #fff;border-radius:38px;background:rgba(255,253,239,.97);box-shadow:0 11px 0 #378f27,0 22px 34px #284f3826}
+.m10-c-word-builder .cwb-instruction{display:flex;align-items:center;justify-content:center;gap:13px;margin-bottom:18px}
+.m10-c-word-builder .cwb-instruction h2{margin:0;color:#6f4818;text-align:center;font-size:clamp(1.35rem,3vw,2rem)}
+.m10-c-word-builder .cwb-instruction .cwb-button{flex:0 0 58px;padding:0;width:58px;height:58px}
+.m10-c-word-builder .cwb-picture{position:relative;display:block;width:min(260px,100%);aspect-ratio:4/3;padding:12px;margin:0 auto 18px;border:6px solid #fff;border-radius:30px;background:linear-gradient(145deg,#fff4bd,#c9efaa);box-shadow:0 8px 0 #64a841}
+.m10-c-word-builder .cwb-picture img{display:block;width:100%;height:100%;object-fit:contain}
+.m10-c-word-builder .cwb-picture span{position:absolute;right:4px;bottom:4px;display:grid;width:40px;height:40px;place-items:center;border:3px solid #fff;border-radius:50%;background:#258fdb;color:#fff}
+.m10-c-word-builder .cwb-answer,.m10-c-word-builder .cwb-letters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:22px auto}
+.m10-c-word-builder .cwb-slot{display:grid;place-items:center;width:clamp(48px,12vw,72px);height:clamp(56px,13vw,80px);border:4px dashed #6ebbf0;border-radius:16px;background:#eef9ff;color:#1e6fd9;font-size:clamp(2rem,6vw,3rem);font-weight:900}
+.m10-c-word-builder .cwb-letter{width:clamp(48px,12vw,72px);min-height:64px;padding:8px;border:4px solid #fff;border-radius:18px;background:linear-gradient(#9b7be8,#7047c5);box-shadow:0 6px 0 #513392;color:#fff;font-size:clamp(1.8rem,6vw,2.5rem);font-weight:900}
+.m10-c-word-builder .cwb-feedback{width:min(680px,100%);min-height:58px;margin:18px auto 0;padding:14px;border-radius:18px;background:#eef8ff;color:#49687b;text-align:center;font-weight:800}
+.m10-c-word-builder .cwb-feedback.is-good{background:#e5f9dc;color:#26743d}
+.m10-c-word-builder .cwb-feedback.is-try{background:#fff0d0;color:#936006}
+.m10-c-word-builder .cwb-next-row{text-align:center;margin-top:20px}
+.m10-c-word-builder .cwb-complete{text-align:center}
+.m10-c-word-builder .cwb-complete>span{font-size:5rem}
+.m10-c-word-builder .cwb-complete h2{color:#1e6fd9;font-size:2.2rem}
+.m10-c-word-builder [hidden]{display:none!important}
+@media(max-width:700px){.m10-c-word-builder .cwb-board{padding:22px 14px 27px;border-width:5px;border-radius:28px}.m10-c-word-builder .cwb-actions{gap:10px}.m10-c-word-builder .cwb-actions .cwb-button{min-width:42%;padding:10px 14px}.m10-c-word-builder .cwb-picture{width:210px}}

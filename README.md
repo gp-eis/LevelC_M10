@@ -1,7 +1,6 @@
-# GP Language · Level C · Month 10
+# GP English - Month 10 Level C
 
-Month 10 URL reservation holding page.
+Current Level C learner website, published at https://gp-eis.github.io/LevelC_M10/.
+Includes four weeks, revised Speech Book flashcards and complete speeches, Reading activities and available games. Unfinished media retains its current placeholders.
 
-GitHub Pages address: https://gp-eis.github.io/LevelC_M10/
-
-This package contains only a Coming soon page. Learning activities, source books and private working files are not included.
+Source books, private review records and other levels are not included.
